@@ -1,0 +1,47 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+}
+
+.logo {
+    width: 5rem;
+    height: 4rem;
+}
+
+.navBar-menu {
+    display: flex;
+    gap: 2rem;
+    margin-left: 1rem;
+}
+
+.navBar-menu li {
+    cursor: pointer;
+    transition: color 0.5s ease; /* Agrega una transición de color de 0.3 segundos con una función de temporización "ease" */
+  }
+  
+  .navBar-menu li:hover {
+    color: gold;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navBar>:nth-child(2){
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+        width: 60%;
+    }
+
+    .navBar-menu{
+        flex-direction: column;
+        background-color: var(--backgroundtext);
+        color: var(--textwhite);
+        padding: 2rem;
+    }
+    .menu-mobile {
+        width: 2rem;
+        height: 2rem;
+        float: right; /* Coloca la imagen a la derecha */
+      }
+      
+  }

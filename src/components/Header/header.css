@@ -1,0 +1,220 @@
+.header{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-h{
+    padding: 1rem;
+    padding-top: 1.5rem;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.right-h {
+    flex: 1;
+    position: relative;
+   
+}
+
+.promotions {
+    margin-top: 4rem;
+    background-color: #1c2229;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 1rem 0.8rem;
+    text-transform: uppercase;
+    color: #D9D9D9;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 700;
+}
+.img-promotions {
+    margin-left: 25rem; /* Agrega un margen izquierdo para separar el span de la imagen */
+    margin-top: -6.25rem;
+    max-width: 6%;
+    
+}
+
+.promotions>span {
+    z-index: 2;
+}
+
+.promotions>div{
+    position: absolute;
+    background-color: var(--button);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+
+.phrase {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: var(--textblue);
+    text-overflow: inherit;
+}
+.phrase>div>span:nth-of-type(2){
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.phrase>div:nth-of-type(3){
+    font-size: 1.1rem;
+    font-style: 1rem;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+.figure-data{
+    display: flex;
+    gap: 2rem;
+}
+.figure-data>div{
+    display: flex;
+    flex-direction: column;
+}
+.figure-data>div>span:nth-of-type(1){
+    color: white;
+    font-size: 2.2rem;
+    -webkit-text-stroke: 0.7px #1c2229; /* Ancho y color del borde */
+}
+.figure-data>div>span:nth-of-type(2){
+    color: #1c2229;
+    font-size: 1rem;
+   
+    text-transform: uppercase;
+}
+
+
+.btn {
+    background-color: var(--button);
+    padding: 0.5rem;
+    font-weight: bold;
+    border: 4px solid transparent;
+    transform: 300ms all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    transition: 600ms;
+    box-shadow: 0 2px 14px -8px rgba(0,0,0,0.7); /* Agrega una sombra */
+}
+.btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #1c2229;
+}
+.right-h> .btn{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    
+}
+.heart-rate{
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+ width: fit-content;
+ padding: 1rem;
+ align-items: start;
+ border-radius: 5px;
+ position: absolute;
+right:  0.5rem;
+ top: 2rem;
+}
+
+.header-image {
+    position: absolute;
+    top: 5%; /* Ajusta la posición vertical al 8% del tamaño del contenedor padre */
+    right: 6%; /* Ajusta la posición horizontal al 6% del tamaño del contenedor padre */
+    min-width: 10rem;
+  }
+  
+  /* Media query para pantallas pequeñas (hasta 767px de ancho) */
+  @media (max-width: 767px) {
+    .header-image {
+      top: 20%; /* Ajusta la posición vertical para pantallas pequeñas */
+      right: 4%; /* Ajusta la posición horizontal para pantallas pequeñas */
+    }
+  }
+  
+  /* Media query para pantallas medianas (768px a 991px de ancho) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .header-image {
+      top: 20%; /* Ajusta la posición vertical para pantallas medianas */
+      right: 5%; /* Ajusta la posición horizontal para pantallas medianas */
+    }
+  }
+  
+
+ .blur-h{
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+ }
+
+ @media screen and (max-width: 768px){
+    .header{
+        flex-direction: column;
+    }
+    .blur-h{
+        width: 17rem;
+    }
+    .promotions{
+        margin-top: 0;
+        font-size: smaller;
+        align-self: center;
+        transform: scale(0.8);
+    }
+    .phrase{
+        padding-top: 3rem;
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+    .phrase>div>span:nth-of-type(2){
+        font-size: small;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .btn{
+        justify-content: center;
+    }
+    .figure-data>div>span:nth-of-type(1){
+        font-size: large;
+    }
+    .figure-data>div>span:nth-of-type(2){
+        font-size: small;
+    }
+    .right-h {
+        position: relative;
+        background: none;
+    }
+    .heart-rate{
+        left: 1;
+        
+    }
+    .right-h .btn{
+        display: none;
+    }
+    .header-image{
+        position: relative;
+        width: 1rem;
+        left: 0.2rem;
+        align-self: center;
+    }
+ }

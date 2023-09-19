@@ -1,0 +1,171 @@
+.Reasons {
+    padding: 0;
+    display: flex;
+    grid-template: 2rem;
+    gap: 3rem;
+}
+
+.left-f {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--backgroundimage);
+    padding: 40px;
+    max-width: 100%;
+    margin-left: -150px;
+  }
+  
+  .left-f img {
+    max-width: 80%; /* Reduzca el valor de max-width para hacer que la imagen sea más pequeña */
+    height: auto; /* Mantenga la relación de aspecto original */
+    max-height: 30rem;
+    margin-left: 200px;
+  }
+  
+  
+.right-f{
+    flex: 1 1;
+    text-transform: uppercase;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-f>span:nth-child(1) {
+    color: var(--textwhite);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.right-f>span:nth-child(2) {
+    color: var(--textblue);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.program-benefits {
+    background-color: var(--backgroundtext); /* Fondo gris claro */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    color: var(--textwhite);
+  }
+  
+  .program-benefits p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .program-benefits ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .program-benefits li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+ 
+  .program-benefits button.btn {
+    margin: auto; 
+    color: var(--textblue);
+
+  }
+
+/*derecha*/
+.Reasons-a {
+    padding: 0;
+    display: flex;
+    grid-template: 2rem;
+    gap: 3rem;
+}
+
+.left-a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--backgroundimage);
+    padding: 20px;
+    max-width: 100%;
+    margin-right: -110px;
+    
+  }
+  
+  .left-a img {
+    max-width: 80%; /* Reduzca el valor de max-width para hacer que la imagen sea más pequeña */
+    height: auto; /* Mantenga la relación de aspecto original */
+    max-height: 30rem;
+    margin-right: 150px;
+  }
+  
+  
+.right-a{
+    flex: 1 1;
+    text-transform: uppercase;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.right-a>span{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.right-a>span:nth-child(1) {
+    color: var(--textwhite);
+    font-weight: 700;
+    font-size: 2rem;
+
+}
+
+.right-a>span:nth-child(2) {
+    color: var(--textblue);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.program-benefits-a {
+    background-color: var(--backgroundtext); /* Fondo gris claro */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    color: var(--textwhite);
+  }
+  
+  .program-benefits-a p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .program-benefits-a ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .program-benefits-a li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+ 
+  .program-benefits-a button.btn {
+    margin: auto; 
+    color: var(--textblue);
+
+  }
+
+  @media screen and (max-width: 768px){
+    .Reasons{
+      flex-direction: column;
+      padding: 1rem;
+      
+    }
+   
+   }
